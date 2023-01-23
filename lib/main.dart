@@ -7,10 +7,10 @@ import 'dart:convert';
 
 void main() => runApp(MaterialApp(
     initialRoute: '/',
-    routes: { //ez egy map, key-value párokkal
-      '/': (context) => Loading(), //ez a base route
-      '/home': (context) => Home(), //mi fog megjelenni a home képernyőn
-      '/location': (context) => ChooseLocation(), //a context elárulja, hol tartunk éppen a widget fában
+    routes: { 
+      '/': (context) => Loading(), 
+      '/home': (context) => Home(), 
+      '/location': (context) => ChooseLocation(), 
     },
   ));
 
