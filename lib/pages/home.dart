@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart'; //erre a libre szükség van
+import 'package:flutter/material.dart'; 
 
 class Home extends StatefulWidget {
   @override
-  State<Home> createState() => _HomeState(); //state object létrehozása
+  State<Home> createState() => _HomeState(); 
 }
 
-class _HomeState extends State<Home> { //ez a state object
+class _HomeState extends State<Home> { 
 
   Map data = {};
 
@@ -26,7 +26,7 @@ class _HomeState extends State<Home> { //ez a state object
 
     return Scaffold(
       backgroundColor: bgColor,
-      body: SafeArea( //olyan területen jeleníti meg a widgetet, ahol jól látható
+      body: SafeArea( 
         child: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
@@ -40,7 +40,7 @@ class _HomeState extends State<Home> { //ez a state object
               children: [
                 TextButton.icon(
                     onPressed: () async {
-                      dynamic result = await Navigator.pushNamed(context, '/location'); //az egyik route nevét használjuk, amelyre váltunk gombnyomásra
+                      dynamic result = await Navigator.pushNamed(context, '/location'); 
                       setState((){
                         data = {
                           'time' : result['time'],
